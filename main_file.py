@@ -40,11 +40,33 @@ one-by-one. It's what the client would want/does want.
 """
 
 import tkinter
+from date_to_day_of_week_calculator import *
 
-def main():
-  pass
+class Main_Window:
+  def __init__(self):
+    self.master = tkinter.Tk()
+    self.master.title("Caption Maker")
+
+    self.person_label = tkinter.Label(self.master, text = "Who?")
+    self.time_label = tkinter.Label(self.master, text = "When?")
+    self.what_was_done_label = tkinter.Label(self.master, text = "What?")
+
+    self.person_entry = tkinter.Entry(self.master)
+    self.time_entry = tkinter.Entry(self.master)
+    self.what_was_done_entry = tkinter.Entry(self.master)
+
+    self.action_button = tkinter.Button(self.master, text = "GO!")
+
+    self.person_label.pack(side = "left")
+    self.person_entry.pack(side = "left")
+    self.time_label.pack(side = "left")
+    self.time_entry.pack(side = "left")
+    self.what_was_done_label.pack(side = "left")
+    self.what_was_done_entry.pack(side = "left")
+
+    self.action_button.pack(side = "bottom")
+
+    self.master.mainloop()
 
 
-
-if __name__ == "__main__":
-  main()
+a = Main_Window()
