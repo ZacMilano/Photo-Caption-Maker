@@ -110,7 +110,7 @@ class Main_Window:
 
     self.new_text.insert(1.0,
                          "{} did {} on {}.\n".format(
-                           str_0, str_1, str_2
+                           str_0, str_1, determine_day(str_2)
                          ))
 
 
