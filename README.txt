@@ -5,10 +5,7 @@ Client:     The Lovely Mallory Smith
 
 Developer:  Zac Monroe
 
-Start Date: 15 Dec 2017 09:41 AM
-
-First
-Prototype:  15 Dec 2017 12:40 PM
+Start Date: 15 Dec 2017
 
 I (Zac) would like to implement several types of captions (multiple templates)
 that the user (Mallory) could choose from.
