@@ -1,3 +1,5 @@
+# Name of this document is now misleading. Client didn't need the day of week.
+
 def parse_string(input):
   if not type(input) == str:
     print("Error in parse_string: input is not a string.")
@@ -16,9 +18,9 @@ def parse_string(input):
 
   return output_list
 
-def determine_day(input_str):
+def determine_date(input_str):
   if not isinstance(input_str, str):
-    print("Error in determine_day: input is not a string.")
+    print("Error in determine_date: input is not a string.")
     return -1
   for char in input_str:
     if char.isalpha():
@@ -29,25 +31,25 @@ def determine_day(input_str):
       year = elt
       str_list.remove(elt)
   month_dict = {
-    1 : "January",
-    2 : "February",
-    3 : "March",
-    4 : "April",
+    1 : "Jan.",
+    2 : "Feb.",
+    3 : "Mar.",
+    4 : "Apr.",
     5 : "May",
     6 : "June",
     7 : "July",
-    8 : "August",
-    9 : "September",
-    10 : "October",
-    11 : "November",
-    12 : "December"
+    8 : "Aug.",
+    9 : "Sept.",
+    10 : "Oct.",
+    11 : "Nov.",
+    12 : "Dec."
   }
   month = month_dict[int(str_list[0])]
   date_num = str_list[1]
 
   day = None
 
-  return "{} {} {}".format(month, date_num, year)
+  return "{} {}, {}".format(month, date_num, year)
 
 
-# print(determine_day("2012-12-12"))
+# print(determine_date("2012-12-12"))
